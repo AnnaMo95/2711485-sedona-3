@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss-individual/3/user/2711485).
-* Наставник: `Неизвестно`.
+* Студент: [Анна Могилевская](https://up.htmlacademy.ru/htmlcss-individual/3/user/2711485).
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
 
 ---
 
