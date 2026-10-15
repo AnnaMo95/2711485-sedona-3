@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="images/favicon.png" type="image/png">
   </head>
-<body>
+
+  <body>
 
     <!-- Шапка -->
 
@@ -121,8 +125,14 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="inputs-price-container">
-                <input class="field-price" name="min-price" type="number" value="0">
-                <input class="field-price" name="max-price" type="number" value="9000">
+                <div class="range-input">
+               <label for="min-price" class="range-label">от</label>
+                 <input class="field-price price-left" name="min-price" type="number" value="0">
+              </div>
+                  <div class="range-input">
+             <label for="max-price" class="range-label">до</label>
+              <input class="field-price price-right" name="max-price" type="number" value="9000">
+            </div>
               </div>
               <div class="range-scale">
                 <div class="range-bar">
