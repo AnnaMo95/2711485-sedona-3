@@ -1045,15 +1045,13 @@ body {
 
 .social-footer {
   display: block;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
   background-size: 47px 40px;
   padding-left: 10px;
   padding-right: 10px;
   width: 47px;
   height: 40px;
-
+justify-content: center;
+align-items: center;
 }
 
 .number {
@@ -1356,20 +1354,19 @@ page-footer-link:focus svg {
   grid-row-start: 4;
 }
 
+
 .hotel-add-favorites:hover {
-  background-color: #6C9E42;
-
-}
-
-.hotel-add-favorites:focus {
-  background-color: #6C9E42;
+  background-color: #68A2CA;
 }
 
 .hotel-add-favorites:active {
-  background-color: #7DB54F;
-  color: rgba(255, 255, 255, 0.3);
+  background-color: #68A2CA;
 }
 
+.hotel-add-favorites:focus {
+  background-color: #68A2CA;
+  color: rgb(255, 255, 255, 0.3);
+}
 
 .hotel-add-favorites-checked {
   display: block;
@@ -1385,6 +1382,19 @@ page-footer-link:focus svg {
   height: 36px;
 }
 
+.hotel-add-favorites-checked:hover {
+  background-color: #6C9E42;
+
+}
+
+.hotel-add-favorites-checked:focus {
+  background-color: #6C9E42;
+}
+
+.hotel-add-favorites-checked:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /*ПАГИНАЦИЯ*/
 .pagination {
@@ -1471,9 +1481,9 @@ page-footer-link:focus svg {
   display: flex;
   justify-content: space-between;
   padding-bottom: 35px;
-  padding-top: 36px;
+  padding-top: 16px;
   align-items: center;
-  height: 120px;
+
 
 }
 
@@ -1497,7 +1507,6 @@ page-footer-link:focus svg {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  margin: auto;
 }
 
 .phone-number:hover {
@@ -1554,6 +1563,8 @@ page-footer-link:focus svg {
   border-radius: 30px;
   padding: 64px 70px;
   border: 0;
+  width: 771px;
+  min-height: 576px;
 }
 
 
@@ -1614,7 +1625,6 @@ page-footer-link:focus svg {
   text-transform: uppercase;
   color: #000000;
   margin: 0 0 64px;
-  padding: 0;
   padding-right: 130px;
 
 }
@@ -1746,7 +1756,7 @@ page-footer-link:focus svg {
 .modal-label {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 
@@ -1757,7 +1767,6 @@ page-footer-link:focus svg {
   padding: 14px 10px;
   border: none;
   cursor: pointer;
-  min-height: 60px;
   background-color: #f2f2f2;
 
 }
@@ -1803,7 +1812,7 @@ page-footer-link:focus svg {
   text-align: center;
   padding: 12px 0;
   border-radius: 0;
-  height: 48px;
+  height:48px;
 
 }
 
