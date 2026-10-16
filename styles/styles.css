@@ -474,7 +474,7 @@ body {
 
   margin: 0;
   padding: 85px 85px;
- max-width: 400px;
+  max-width: 400px;
 
 }
 
@@ -1050,8 +1050,8 @@ body {
   padding-right: 10px;
   width: 47px;
   height: 40px;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .number {
@@ -1363,6 +1363,7 @@ page-footer-link:focus svg {
   background-color: #68A2CA;
 }
 
+
 .hotel-add-favorites:focus {
   background-color: #68A2CA;
   color: rgb(255, 255, 255, 0.3);
@@ -1483,6 +1484,7 @@ page-footer-link:focus svg {
   padding-bottom: 35px;
   padding-top: 16px;
   align-items: center;
+  height: 120px;
 
 
 }
@@ -1507,6 +1509,7 @@ page-footer-link:focus svg {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
+ margin: auto;
 }
 
 .phone-number:hover {
@@ -1625,7 +1628,7 @@ page-footer-link:focus svg {
   text-transform: uppercase;
   color: #000000;
   margin: 0 0 64px;
-  padding-right: 130px;
+ padding-right: 130px;
 
 }
 
@@ -1756,7 +1759,7 @@ page-footer-link:focus svg {
 .modal-label {
   position: relative;
   display: flex;
-  align-items: center;
+align-items: center;
 }
 
 
@@ -1767,8 +1770,8 @@ page-footer-link:focus svg {
   padding: 14px 10px;
   border: none;
   cursor: pointer;
-  background-color: #f2f2f2;
-
+  min-height: 60px;
+background-color: #f2f2f2;
 }
 
 .modal-counter-min {
@@ -1812,8 +1815,7 @@ page-footer-link:focus svg {
   text-align: center;
   padding: 12px 0;
   border-radius: 0;
-  height:48px;
-
+height: 48px;
 }
 
 
