@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico" sizes="32x32">
+    <link rel="icon" href="images/favicon.png" type="image/png">
   </head>
-<body>
+
+  <body>
 
     <!-- Шапка -->
 
     <div class="page-container">
-      <header class="page-header coll">
+      <header class="page-header coll" data-test="header">
         <nav class="navigation">
           <a class="header-logo" href="index.html">
             <img class="header-logo-pic" src="images/logo.svg" alt="Логотип Седона" width="138" height="64"></a>
@@ -53,7 +57,7 @@
     <!-- Гостинницы  -->
 
 
-    <main class="main container main-index">
+    <main class="main container main-index" data-test="main">
       <div class="page-container-catalog">
         <section class="inner-section">
           <h1 class="inner-header-title">Гостинницы Седоны</h1>
@@ -73,7 +77,7 @@
           </ol>
         </section>
 
-        <section class="catalog-product-filter">
+        <section class="catalog-product-filter" data-test="filter">
           <h2 class="visually-hidden">Параметры выбора</h2>
 
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -121,8 +125,14 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="inputs-price-container">
-                <input class="field-price" name="min-price" type="number" value="0">
-                <input class="field-price" name="max-price" type="number" value="9000">
+                <div class="range-input">
+               <label for="min-price" class="range-label">от</label>
+                 <input class="field-price price-left" name="min-price" type="number" value="0">
+              </div>
+                  <div class="range-input">
+             <label for="max-price" class="range-label">до</label>
+              <input class="field-price price-right" name="max-price" type="number" value="9000">
+            </div>
               </div>
               <div class="range-scale">
                 <div class="range-bar">
@@ -145,7 +155,7 @@
       <!-- Поле выбора по критериями -->
 
 
-      <section class="catalog-product coll">
+      <section class="catalog-product coll" data-test="catalog">
         <div class="sorting-container">
         <h2 class="catalog-search">Найдено гостиниц:<span> 38</span></h2>
         <select class="select-control" aria-label="Сортировка">
@@ -189,7 +199,7 @@
              <a class="button hotel-details-button" href="#">
               Подробнее
           </a>
-            <button class="button hotel-add-favorites" type="button">
+            <button class="button hotel-add-favorites " type="button">
               В избранное
             </button>
            <span class="rating-stars rating-stars-4">
@@ -298,7 +308,7 @@
 
       <!-- Подписка на рассылку -->
 
-      <section class="section-mail coll">
+      <section class="section-mail coll" data-test="mail">
         <h2 class="mail-title">Подпишитесь на рассылку?</h2>
         <p class="mail-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-mail" action="https://echo.htmlacademy.ru/" method="post">
@@ -313,7 +323,7 @@
     <!-- ПОДВАЛ-->
 
 
-      <footer class="page-footer coll">
+      <footer class="page-footer coll" data-test="footer">
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="social-footer social-footer-vk" href="https://vk.com/htmlacademy">
