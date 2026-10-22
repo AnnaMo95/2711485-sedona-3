@@ -254,7 +254,9 @@ body {
   color: #ffffff;
   background-color: #253239;
   background-image: url("../images/indexmain.svg"), url("../images/mainpic.jpeg");
-  background-size: 100% auto, cover;
+  background-size:
+    100% auto,
+    cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
