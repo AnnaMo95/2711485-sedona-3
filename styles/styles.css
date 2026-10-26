@@ -88,7 +88,7 @@ body {
   background: #ffffff;
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .page-header a {
@@ -232,6 +232,7 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: auto;
+  margin-top: 14px;
 }
 
 .navigation-button:hover {
@@ -733,7 +734,7 @@ body {
 }
 
 .catalog-item:hover {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.6;
 }
 
 .catalog-item:focus {
@@ -741,7 +742,7 @@ body {
 }
 
 .catalog-item:active {
-  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.3;
 }
 
 .catalog-filter {
@@ -758,18 +759,6 @@ body {
   margin: 0;
   background-color: #ffffff;
   border-radius: 4px;
-}
-
-.input-checkbox:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.input-checkbox:focus {
-  background-color: rgba(255, 255, 255);
-}
-
-.input-checkbox:active {
-  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .input-checkbox:checked {
@@ -801,17 +790,6 @@ body {
   border-radius: 50%;
 }
 
-.input-radio:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.input-radio:focus {
-  background-color: rgba(255, 255, 255);
-}
-
-.input-radio:active {
-  background-color: rgba(255, 255, 255, 0.6);
-}
 /* форма цены */
 
 .catalog-filter-group {
@@ -849,8 +827,6 @@ body {
 
 .field-price:hover {
   background-color: #e5e5e5;
-  border-color: #82b3d3;
-  border-radius: 3px;
 }
 
 .field-price:focus {
@@ -1144,7 +1120,6 @@ body {
 }
 
 .product-card a {
-  color: #ffffff;
   text-decoration: none;
   grid-column: 1/-1;
 }
@@ -1235,7 +1210,7 @@ body {
   color: #ffffff;
   background-color: #756157;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   padding: 8px 26px;
   border: 0;
   grid-column-start: 2;
@@ -1272,7 +1247,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   grid-column-start: 2;
   grid-row-start: 4;
 }
@@ -1407,7 +1382,8 @@ body {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  max-width: 250px;
+  width: 142px;
+  flex-shrink: 0;
 }
 
 .page-footer a {
@@ -1421,8 +1397,8 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  margin: 0;
-  padding: 5px 195px 5px 195px;
+  margin: 0 20px;
+  width: 350px;
 }
 
 .phone-number:hover {
