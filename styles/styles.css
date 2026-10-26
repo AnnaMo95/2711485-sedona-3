@@ -88,7 +88,7 @@ body {
   background: #ffffff;
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .page-header a {
@@ -210,8 +210,8 @@ body {
   border-radius: 10px;
   font-size: 10px;
   line-height: 10px;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   color: #ffffff;
 }
 
@@ -232,6 +232,7 @@ body {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: auto;
+  margin-top: 14px;
 }
 
 .navigation-button:hover {
@@ -254,9 +255,7 @@ body {
   color: #ffffff;
   background-color: #253239;
   background-image: url("../images/indexmain.svg"), url("../images/mainpic.jpeg");
-  background-size:
-    100% auto,
-    cover;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
@@ -277,6 +276,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 28px;
+  padding: 0 290px 0 290px;
 }
 
 .advantages-item {
@@ -404,7 +404,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 348px 0 348px;
   margin-top: 64px;
   margin-bottom: 22px;
 }
@@ -414,7 +414,7 @@ body {
   font-size: 22px;
   font-weight: 26px;
   text-align: center;
-  padding: 0;
+  padding: 0 348px 0 348px;
   margin-top: 0;
   margin-bottom: 68px;
 }
@@ -554,9 +554,9 @@ body {
 }
 
 .section-mail-index {
-  background-image: url("../images/backgroundmain.jpg");
-  background-color: #404b50;
+  background-image: url("../images/background-main.jpg");
   color: #ffffff;
+  background-color: #404b50;
   background-size: cover;
   background-repeat: no-repeat;
   padding-right: 258px;
@@ -638,9 +638,9 @@ body {
 /* главная */
 
 .page-container-catalog {
-  background-image: url("../images/backgroundmain.jpg");
-  background-color: #253239;
+  background-image: url("../images/background-main.jpg");
   color: #ffffff;
+  background-color: #253239;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
@@ -674,7 +674,7 @@ body {
   display: block;
   width: 12px;
   height: 14px;
-  background-image: url("../images/homebreadc.svg");
+  background-image: url("../images/home-bread-crumbs.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -696,7 +696,7 @@ body {
 .breadcrumbs-item:not(:last-child)::after {
   display: block;
   content: "";
-  background-image: url("../images/breadnext.svg");
+  background-image: url("../images/breadcrumbs-next.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -731,6 +731,18 @@ body {
   line-height: 23px;
   margin-bottom: 16px;
   gap: 16px;
+}
+
+.catalog-item:hover {
+  opacity: 0.6;
+}
+
+.catalog-item:focus {
+  color: rgba(255, 255, 255);
+}
+
+.catalog-item:active {
+  opacity: 0.3;
 }
 
 .catalog-filter {
@@ -817,8 +829,12 @@ body {
   background-color: #e5e5e5;
 }
 
+.field-price:focus {
+  background-color: #e5e5e5;
+}
+
 .field-price:active {
-  border-color: #82b3d3;
+  border-color: #e5e5e5;
 }
 
 .price-right {
@@ -1032,6 +1048,10 @@ body {
   border-color: #68a2ca;
 }
 
+.select-control:active {
+  border-color: #e5e5e5;
+}
+
 /*Кнопки каталога*/
 
 .catalog-search {
@@ -1100,7 +1120,6 @@ body {
 }
 
 .product-card a {
-  color: #ffffff;
   text-decoration: none;
   grid-column: 1/-1;
 }
@@ -1191,7 +1210,7 @@ body {
   color: #ffffff;
   background-color: #756157;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   padding: 8px 26px;
   border: 0;
   grid-column-start: 2;
@@ -1228,7 +1247,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   width: 140px;
-  height: 36px;
+  min-height: 36px;
   grid-column-start: 2;
   grid-row-start: 4;
 }
@@ -1363,7 +1382,8 @@ body {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  max-width: 250px;
+  width: 142px;
+  flex-shrink: 0;
 }
 
 .page-footer a {
@@ -1377,7 +1397,8 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-align: center;
-  margin: 0;
+  margin: 0 20px;
+  width: 350px;
 }
 
 .phone-number:hover {
@@ -1705,7 +1726,7 @@ body {
   width: 26px;
   height: 26px;
   border: none;
-  background-image: url("../images/!.svg");
+  background-image: url("../images/exclamationmark.svg");
   background-position: center;
   background-repeat: no-repeat;
   padding: 3px;
