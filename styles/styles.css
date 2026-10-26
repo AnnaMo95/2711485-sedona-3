@@ -1071,6 +1071,7 @@ body {
 .select-control:focus {
   border-color: #68a2ca;
 }
+
 .select-control:active {
   border-color: #e5e5e5;
 }
