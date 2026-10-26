@@ -403,7 +403,7 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  padding: 0;
+  padding: 0 348px 0 348px;
   margin-top: 64px;
   margin-bottom: 22px;
 }
