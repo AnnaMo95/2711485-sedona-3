@@ -210,8 +210,8 @@ body {
   border-radius: 10px;
   font-size: 10px;
   line-height: 10px;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   color: #ffffff;
 }
 
@@ -254,9 +254,7 @@ body {
   color: #ffffff;
   background-color: #253239;
   background-image: url("../images/indexmain.svg"), url("../images/mainpic.jpeg");
-  background-size:
-    100% auto,
-    cover;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: bottom, center;
   text-align: center;
@@ -277,6 +275,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 28px;
+  padding: 0 290px 0 290px;
 }
 
 .advantages-item {
@@ -554,9 +553,9 @@ body {
 }
 
 .section-mail-index {
-  background-image: url("../images/backgroundmain.jpg");
-  background-color: #404b50;
+  background-image: url("../images/background-main.jpg");
   color: #ffffff;
+  background-color: #404b50;
   background-size: cover;
   background-repeat: no-repeat;
   padding-right: 258px;
@@ -638,9 +637,9 @@ body {
 /* главная */
 
 .page-container-catalog {
-  background-image: url("../images/backgroundmain.jpg");
-  background-color: #253239;
+  background-image: url("../images/background-main.jpg");
   color: #ffffff;
+  background-color: #253239;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
@@ -674,7 +673,7 @@ body {
   display: block;
   width: 12px;
   height: 14px;
-  background-image: url("../images/homebreadc.svg");
+  background-image: url("../images/home-bread-crumbs.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -696,7 +695,7 @@ body {
 .breadcrumbs-item:not(:last-child)::after {
   display: block;
   content: "";
-  background-image: url("../images/breadnext.svg");
+  background-image: url("../images/breadcrumbs-next.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -733,6 +732,18 @@ body {
   gap: 16px;
 }
 
+.catalog-item:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-item:focus {
+  color: rgba(255, 255, 255);
+}
+
+.catalog-item:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .catalog-filter {
   display: flex;
   flex-wrap: wrap;
@@ -747,6 +758,18 @@ body {
   margin: 0;
   background-color: #ffffff;
   border-radius: 4px;
+}
+
+.input-checkbox:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-checkbox:focus {
+  background-color: rgba(255, 255, 255);
+}
+
+.input-checkbox:active {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .input-checkbox:checked {
@@ -778,6 +801,17 @@ body {
   border-radius: 50%;
 }
 
+.input-radio:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.input-radio:focus {
+  background-color: rgba(255, 255, 255);
+}
+
+.input-radio:active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
 /* форма цены */
 
 .catalog-filter-group {
@@ -815,10 +849,16 @@ body {
 
 .field-price:hover {
   background-color: #e5e5e5;
+  border-color: #82b3d3;
+  border-radius: 3px;
+}
+
+.field-price:focus {
+  background-color: #e5e5e5;
 }
 
 .field-price:active {
-  border-color: #82b3d3;
+  border-color: #e5e5e5;
 }
 
 .price-right {
@@ -1030,6 +1070,9 @@ body {
 
 .select-control:focus {
   border-color: #68a2ca;
+}
+.select-control:active {
+  border-color: #e5e5e5;
 }
 
 /*Кнопки каталога*/
@@ -1378,6 +1421,7 @@ body {
   line-height: 40px;
   text-align: center;
   margin: 0;
+  max-width: 331px;
 }
 
 .phone-number:hover {
@@ -1705,7 +1749,7 @@ body {
   width: 26px;
   height: 26px;
   border: none;
-  background-image: url("../images/!.svg");
+  background-image: url("../images/exclamationmark.svg");
   background-position: center;
   background-repeat: no-repeat;
   padding: 3px;
