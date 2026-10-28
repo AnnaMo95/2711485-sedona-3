@@ -954,7 +954,7 @@ body {
   text-decoration: none;
   cursor: pointer;
   margin-bottom: 32px;
-  width: 191px;
+  max-width: 191px;
 }
 
 .catalog-submit-btn:hover {
@@ -977,6 +977,7 @@ body {
   line-height: 20px;
   padding: 8px 50px;
   background-color: transparent;
+  max-width: 191px;
 }
 
 .catalog-reset-btn:hover {
